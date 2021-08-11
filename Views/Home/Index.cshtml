@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>SignalR Chat | ASP.Net Core</h1>
+</div>
+
+<div class="container">
+
+    <div class="form-group">
+        <label for="userInput">User Name:</label>
+        <input type="text" class="form-control" id="userInput">
+    </div>
+    <div class="form-group">
+        <label for="messageInput">Message</label>
+        <input type="text" class="form-control" id="messageInput" name="password">
+    </div>
+
+    <button type="button" id="sendButton" class="btn btn-success">Send Message</button>
+
+</div>
+<hr />
+
+<div class="container">
+    <ul id="messagesList" class="list-group"></ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aspnet-signalr/1.0.27/signalr.js" ></script>
+<script src="~/js/chat.js"></script>
